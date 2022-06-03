@@ -1,0 +1,28 @@
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            SV_blog
+tagline:          'Всё сказанное здесь сегодня, может быть не так уж важно завтра... В.Сувер'
+paginate:         7
+paginate_path:    "page:num"
+highlighter:      rouge
+future:           true
+show_drafts:      false
+
+url:              https://suvernet.github.io/sv_blog
+shorturl:         sv_blog
+
+author:
+  name:          Виктор Сувер
+  url:            suver.ru
+
+# This is the list of pages to include in the header of the website.
+pages_list:
+  О блоге: './about'
+  Архив записей: './archive'
+
+gems:
+  - jemoji
+  - jekyll-paginate
+  - jekyll-gist

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="container content">
+      <div class="masthead">
+        <h3 class="masthead-title">
+            <a href="/suver/" title="Suver">{{ site.title }}</a>
+
+            {% for page in site.pages_list %}
+              &nbsp;&nbsp;&nbsp;
+              <small><a href="/suver/{{ page[1]  }}">{{ page[0] }}</a></small>
+            {% endfor %}
+
+            <p> <small>{{ site.tagline }}</small> </p>
+        </h3>
+      </div>
+
+      {{ content }}
+
+      <div class="footer">
+        <div id="scrollup">
+            <i class="fa fa-chevron-circle-up fa-2x"></i>
+        </div>
+        <p>
+          &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+        </p>
+      </div>
+    </div>
+
+  </body>
+</html>
